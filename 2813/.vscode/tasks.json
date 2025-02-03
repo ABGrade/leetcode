@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build app",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-std=c99",
+                "-Wall",
+                "-Werror",
+                "-g",
+                "*.c",
+                "-o",
+                "app.exe",
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
